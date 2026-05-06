@@ -1,224 +1,142 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": [],
-      "authorship_tag": "ABX9TyNXnA5wiZYkiFNI93gnsAW5",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/GuitarHero-23/Exoneracion/blob/main/Exoneracion.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "execution_count": 22,
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 651
-        },
-        "id": "HIWuaJEEEPA_",
-        "outputId": "d5fd0c55-4e44-4898-9833-9d47e3e5aa23"
-      },
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "¿Desea iniciar secion? (si/no): si\n",
-            "Digite su nombre: s\n",
-            "Bienvenido s\n",
-            "Digite su tipo [1 (Normal)/2(Premium)]: 2\n",
-            "\n",
-            "Viajar\n",
-            "Recargar\n",
-            "Revisar\n",
-            "Perfil\n",
-            "Sumatoria\n",
-            "Salir\n",
-            "Digite su accion: perfil\n",
-            "\n",
-            "Desea revisar el perfil detallado? (si/no): no\n",
-            "Nombre:s\n",
-            "Saldo:50.00\n",
-            "\n"
-          ]
-        },
-        {
-          "output_type": "error",
-          "ename": "KeyboardInterrupt",
-          "evalue": "Interrupted by user",
-          "traceback": [
-            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
-            "\u001b[0;32m/tmp/ipykernel_25608/282817029.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m    100\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    101\u001b[0m \u001b[0;32mwhile\u001b[0m \u001b[0;32mTrue\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 102\u001b[0;31m       \u001b[0mac\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34mf\"Viajar\\nRecargar\\nRevisar\\nPerfil\\nSumatoria\\nSalir\\nDigite su accion: \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlower\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    103\u001b[0m       \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    104\u001b[0m       \u001b[0;32mif\u001b[0m \u001b[0mac\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;34m\"recargar\"\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36mraw_input\u001b[0;34m(self, prompt)\u001b[0m\n\u001b[1;32m   1175\u001b[0m                 \u001b[0;34m\"raw_input was called, but this frontend does not support input requests.\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1176\u001b[0m             )\n\u001b[0;32m-> 1177\u001b[0;31m         return self._input_request(\n\u001b[0m\u001b[1;32m   1178\u001b[0m             \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mprompt\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1179\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_ident\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"shell\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36m_input_request\u001b[0;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[1;32m   1217\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1218\u001b[0m                 \u001b[0;31m# re-raise KeyboardInterrupt, to truncate traceback\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1219\u001b[0;31m                 \u001b[0;32mraise\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Interrupted by user\"\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1220\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1221\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlog\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwarning\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Invalid Message:\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mexc_info\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;31mKeyboardInterrupt\u001b[0m: Interrupted by user"
-          ]
-        }
-      ],
-      "source": [
-        "import random\n",
-        "\n",
-        "class Usuario():\n",
-        "  def __init__(self, nombre = \"Usuario\"):\n",
-        "    self.cuenta = 50\n",
-        "    self.nombre = nombre\n",
-        "    self.historial = []\n",
-        "    self.tipo = \"Normal\"\n",
-        "\n",
-        "  def recargar(self, dinero):\n",
-        "    self.cuenta += dinero\n",
-        "    print (f\"Se han recargado ${dinero:.2f}\")\n",
-        "\n",
-        "  def viajar(self):\n",
-        "    distancia = random.randint(1, 1000)\n",
-        "    precio = distancia*0.5\n",
-        "    viajes = (distancia, precio)\n",
-        "    self.historial.append(viajes)\n",
-        "    print(f\"Distancia: {distancia}\\nValor a pagar: ${precio:.2f}\")\n",
-        "    self.cuenta -= precio\n",
-        "    if self.cuenta >= 0:\n",
-        "      print(\"Pago realizado\")\n",
-        "      pass\n",
-        "    else:\n",
-        "      print(\"Dinero insuficiente\")\n",
-        "      self.historial.pop()\n",
-        "      self.cuenta += precio\n",
-        "\n",
-        "  def revisar(self):\n",
-        "    k = 0\n",
-        "    if len(self.historial) == 0:\n",
-        "      print(\"No tiene viajes\")\n",
-        "    else:\n",
-        "      for x, y in self.historial:\n",
-        "        k += 1\n",
-        "        print(f\"{k}: {x}km\")\n",
-        "\n",
-        "  def perfil(self, detallado):\n",
-        "    if detallado:\n",
-        "      print(f\"Nombre:{self.nombre}\\nTipo:{self.tipo}\\nSaldo:{self.cuenta:.2f}\\nCantidad de Viajes: {len(self.historial)}\")\n",
-        "    else:\n",
-        "      print(f\"Nombre:{self.nombre}\\nSaldo:{self.cuenta:.2f}\")\n",
-        "\n",
-        "  def sumatoria(self):\n",
-        "    suma = 0\n",
-        "    for x, y in self.historial:\n",
-        "      suma += y\n",
-        "    return suma\n",
-        "\n",
-        "class Premium(Usuario):\n",
-        "  def __init__(self,nombre = \"Usuario\"):\n",
-        "    super().__init__(nombre)\n",
-        "    self.tipo = \"Premium\"\n",
-        "\n",
-        "  def viajar(self):\n",
-        "    distancia = random.randint(1, 1000)\n",
-        "    precio = distancia*0.5*0.8\n",
-        "    viajes = (distancia, precio)\n",
-        "    self.historial.append(viajes)\n",
-        "    print(f\"Distancia: {distancia}km\\nValor a pagar: ${precio:.2f}\")\n",
-        "    self.cuenta -= precio\n",
-        "    if self.cuenta >=0:\n",
-        "      print(\"Pago realizado\")\n",
-        "      pass\n",
-        "    else:\n",
-        "      print(\"Dinero insuficiente\")\n",
-        "      self.historial.pop()\n",
-        "      self.cuenta += precio\n",
-        "\n",
-        "n = 0\n",
-        "\n",
-        "ini = input(\"¿Desea iniciar secion? (si/no): \").lower()\n",
-        "if ini == \"si\":\n",
-        "  n = str(input(\"Digite su nombre: \"))\n",
-        "  print(f\"Bienvenido {n}\")\n",
-        "elif ini == \"no\":\n",
-        "  pass\n",
-        "else:\n",
-        "  print(\"Valor no valido, no se ha iniciado sesion\")\n",
-        "opc = [1,2]\n",
-        "if n != 0:\n",
-        "  while True:\n",
-        "    try:\n",
-        "      t = int(input(\"Digite su tipo [1 (Normal)/2(Premium)]: \"))\n",
-        "    except:\n",
-        "      pass\n",
-        "    if t in opc:\n",
-        "      break\n",
-        "    else:\n",
-        "      pass\n",
-        "  else:\n",
-        "    t = 1\n",
-        "  if t == 1:\n",
-        "    usuario = Usuario(n)\n",
-        "  else:\n",
-        "    usuario = Premium(n)\n",
-        "if n == 0:\n",
-        "  usuario = Usuario()\n",
-        "print()\n",
-        "\n",
-        "while True:\n",
-        "      ac = input(f\"Viajar\\nRecargar\\nRevisar\\nPerfil\\nSumatoria\\nSalir\\nDigite su accion: \").lower()\n",
-        "      print()\n",
-        "      if ac == \"recargar\":\n",
-        "        while True:\n",
-        "          try:\n",
-        "            din = float(input(\"Cuanto desea recargar: \"))\n",
-        "            if din > 0:\n",
-        "              break\n",
-        "            else:\n",
-        "              pass\n",
-        "          except:\n",
-        "            pass\n",
-        "        usuario.recargar(din)\n",
-        "        print()\n",
-        "      elif ac == \"viajar\":\n",
-        "        usuario.viajar()\n",
-        "        print()\n",
-        "      elif ac == \"revisar\":\n",
-        "        usuario.revisar()\n",
-        "        print()\n",
-        "      elif ac == \"perfil\":\n",
-        "        while True:\n",
-        "          d = input(\"Desea revisar el perfil detallado? (si/no): \").lower()\n",
-        "          if d == \"si\":\n",
-        "            m = True\n",
-        "            break\n",
-        "          elif d == \"no\":\n",
-        "            m = False\n",
-        "            break\n",
-        "          else:\n",
-        "            print(\"Opcion no valida\")\n",
-        "        usuario.perfil(m)\n",
-        "        print()\n",
-        "      elif ac == \"sumatoria\":\n",
-        "        print(f\"Gasto total: ${usuario.sumatoria():.2f}\")\n",
-        "        print()\n",
-        "      elif ac == \"salir\":\n",
-        "        break\n",
-        "      else:\n",
-        "        print(\"Opcion no valida\")\n",
-        "        print()"
-      ]
-    }
-  ]
-}
+import random
+
+class Usuario():
+  def __init__(self, nombre = "Usuario"):
+    self.cuenta = 50
+    self.nombre = nombre
+    self.historial = []
+    self.tipo = "Normal"
+
+  def recargar(self, dinero):
+    self.cuenta += dinero
+    print (f"Se han recargado ${dinero:.2f}")
+
+  def viajar(self):
+    distancia = random.randint(1, 1000)
+    precio = distancia*0.5
+    viajes = (distancia, precio)
+    self.historial.append(viajes)
+    print(f"Distancia: {distancia}\nValor a pagar: ${precio:.2f}")
+    self.cuenta -= precio
+    if self.cuenta >= 0:
+      print("Pago realizado")
+      pass
+    else:
+      print("Dinero insuficiente")
+      self.historial.pop()
+      self.cuenta += precio
+
+  def revisar(self):
+    k = 0
+    if len(self.historial) == 0:
+      print("No tiene viajes")
+    else:
+      for x, y in self.historial:
+        k += 1
+        print(f"{k}: {x}km")
+
+  def perfil(self, detallado):
+    if detallado:
+      print(f"Nombre:{self.nombre}\nTipo:{self.tipo}\nSaldo:{self.cuenta:.2f}\nCantidad de Viajes: {len(self.historial)}")
+    else:
+      print(f"Nombre:{self.nombre}\nSaldo:{self.cuenta:.2f}")
+  
+  def sumatoria(self):
+    suma = 0
+    for x, y in self.historial:
+      suma += y
+    return suma
+  
+class Premium(Usuario):
+  def __init__(self,nombre = "Usuario"):
+    super().__init__(nombre)
+    self.tipo = "Premium"
+
+  def viajar(self):
+    distancia = random.randint(1, 1000)
+    precio = distancia*0.5*0.8
+    viajes = (distancia, precio)
+    self.historial.append(viajes)
+    print(f"Distancia: {distancia}km\nValor a pagar: ${precio:.2f}")
+    self.cuenta -= precio
+    if self.cuenta >=0:
+      print("Pago realizado")
+      pass
+    else:
+      print("Dinero insuficiente")
+      self.historial.pop()
+      self.cuenta += precio
+
+n = 0
+
+ini = input("¿Desea iniciar secion? (si/no): ").lower()
+if ini == "si":
+  n = str(input("Digite su nombre: "))
+  print(f"Bienvenido {n}")
+elif ini == "no":
+  pass
+else:
+  print("Valor no valido, no se ha iniciado sesion")
+opc = [1,2]
+if n != 0:
+  while True:
+    try:
+      t = int(input("Digite su tipo [1 (Normal)/2(Premium)]: "))
+    except:
+      pass
+    if t in opc:
+      break
+    else:
+      pass
+  else:
+    t = 1
+  if t == 1:
+    usuario = Usuario(n)
+  else:
+    usuario = Premium(n)
+if n == 0:
+  usuario = Usuario()
+print()
+
+while True:
+      ac = input(f"Viajar\nRecargar\nRevisar\nPerfil\nSumatoria\nSalir\nDigite su accion: ").lower()
+      print()
+      if ac == "recargar":
+        while True:
+          try:
+            din = float(input("Cuanto desea recargar: "))
+            if din > 0:
+              break
+            else:
+              pass
+          except:
+            pass
+        usuario.recargar(din)
+        print()
+      elif ac == "viajar":
+        usuario.viajar()
+        print()
+      elif ac == "revisar":
+        usuario.revisar()
+        print()
+      elif ac == "perfil":
+        while True:
+          d = input("Desea revisar el perfil detallado? (si/no): ").lower()
+          if d == "si":
+            m = True
+            break
+          elif d == "no":
+            m = False
+            break
+          else:
+            print("Opcion no valida")
+        usuario.perfil(m)
+        print()
+      elif ac == "sumatoria":
+        print(f"Gasto total: ${usuario.sumatoria():.2f}")
+        print()
+      elif ac == "salir":
+        break
+      else:
+        print("Opcion no valida")
+        print()
